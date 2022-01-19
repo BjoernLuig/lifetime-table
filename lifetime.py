@@ -2,7 +2,7 @@
 """
 @author: Björn Luig
 
-A short script that generates a visualisation of all the weeks in year life which you have lived and which you have left.
+A short script that generates a visualisation of all the weeks in life which you have lived and which you have left.
 """
 
 from datetime import datetime, timedelta
