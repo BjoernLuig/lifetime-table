@@ -29,7 +29,7 @@ draw = ImageDraw.Draw(img)
 draw.text((50, 50), f"A {lifetime}-Year Lifetime in Weeks", font=bigfont, fill="black")
 draw.text(
     (130, 150),
-    f'Birthhday: {birthday.strftime("%d.%m.%Y")}',
+    f'Birthday: {birthday.strftime("%d.%m.%Y")}',
     font=font,
     fill="black",
 )
