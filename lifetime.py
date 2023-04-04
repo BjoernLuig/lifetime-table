@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw, ImageFont
 birthday = input("birthday (dd.mm.yyyy)? ").split(".")
 lifetime = int(
     input(
-        "life expectency in years (probably 90 or for example look at https://www.livingto100.com/calculator)? "
+        "life expectency in years (probably ~90 or for example look at https://www.livingto100.com/calculator)? "
     )
 )
 
@@ -28,10 +28,7 @@ bigfont = ImageFont.truetype("arial.ttf", 50, encoding="utf-8")
 draw = ImageDraw.Draw(img)
 draw.text((50, 50), f"A {lifetime}-Year Lifetime in Weeks", font=bigfont, fill="black")
 draw.text(
-    (130, 150),
-    f'Birthday: {birthday.strftime("%d.%m.%Y")}',
-    font=font,
-    fill="black",
+    (130, 150), f'Birthday: {birthday.strftime("%d.%m.%Y")}', font=font, fill="black",
 )
 y = 200
 x = 130 + 15 * round((birthday - datetime(birthday.year, 1, 1)).days / 7)
